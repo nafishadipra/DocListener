@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "DocListener",
+  "version": "0.1.0",
+  "description": "Privacy-first Chrome extension for listening to technical documentation aloud.",
+  "permissions": [
+    "sidePanel",
+    "activeTab",
+    "scripting",
+    "storage",
+    "tts"
+  ],
+  "action": {
+    "default_title": "Open DocListener"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  }
+}
